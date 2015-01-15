@@ -1,0 +1,176 @@
+set nocompatible
+if has('win32')
+	source $VIMRUNTIME/vimrc_example.vim
+	source $VIMRUNTIME/mswin.vim
+	behave mswin
+
+	"This removes the Ctrl-A windows mapping of "select all" restoring the
+	"increment number functionality to match Ctrl-X as decrement
+	:nunmap <C-a>
+
+	"This removes the Ctrl-y windows mapping of "redo" restoring the scroll
+	:nunmap <C-y>
+
+	"Windows Custom command to insert date
+	command Date execute ":r !date /t"
+else
+	"linux Custom command to insert date
+	command Date execute ":r !date +'%a %D'"
+endif
+
+command Spellon execute ":set spell spelllang=en_us"
+command Spelloff execute ":set nospell"
+
+"pathogen makes it easy to install plugins and runtime files
+"in their own directories. Any plugins can be extracted to a
+"subdirectory under vimfiles/bundle
+call pathogen#infect()
+
+"set color-scheme
+colorscheme two2tango
+
+:let mapleader=","
+
+"set numbers
+set nu
+
+set nowrap
+
+"set ignore case for searches (like using /)
+set ic
+
+set autoindent
+
+set tabstop=4
+
+set shiftwidth=4
+
+set sidescroll=8
+set sidescrolloff=2
+
+"sets an overflow highlight width at 100 characters
+"highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+"highlight OverLength ctermbg=black guibg=#592929
+"match OverLength /\%100v.\+/
+
+"sets the default font for gvim
+if has('gui_running')
+	set guifont=Lucida_Console:h11:cANSI
+endif
+
+"this is for the autoclose stuff
+let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'",'#':'#','<':'>'} 
+
+"this will remap ctrl-tab to be the next tab...I think this gt stuff is
+"default behaviour
+":nmap <C-S-t> :tabnew<CR>
+
+"this will remap ctrl-tab to be the next tab...I think this gt stuff is
+"default behaviour
+":nmap <C-S-tab> gT
+
+"this will remap ctrl-tab to be the next tab...I think this gt stuff is
+"default behaviour
+":nmap <C-tab> gt
+
+"this will remap the escape key, the jj or whatever must be typed quickly
+:imap jj <Esc>
+
+"custom key to insert line break from normal mode, kind of opposite of <S-J>
+:nnoremap <C-j> i<CR><ESC>
+
+
+"this will remap <ctr>M to wrap selected in ColdFusion Comment the insert one
+"is broken...does it whenever enter is pressed
+":inoremap <C-M> <!---  ---><ESC>4hi
+:vnoremap <C-M> "mc<!---<CR>---><ESC>O<TAB><ESC>"m]pk"_dd
+
+"Turns off backup
+set nobackup
+
+"Turns on backup
+"set backup
+
+"Sets the directory to store backups to ~/.backup
+"set backupdir=d:\Users\smerrill\.backup USE RELATIVE PATHS!
+
+"Sets the directory to store swap files to ~/.backup
+"set dir=~/.backup
+
+set dir=~/.backup/.swap
+
+"trying to get some autofold action
+" I put these files in my cfml.vim in one of my bundle's syntax
+" folders...probably could be put somewhere else
+""" syn region functionFold start="<cffunction " end="\/cffunction>" transparent fold keepend
+""" syn sync fromstart
+""" set foldnestmax=1
+""" set foldmethod=syntax
+" then put these here...
+" set foldmethod=syntax
+" set foldlevelstart=1
+" let javaScript_fold=1	"JavaScript
+" let xml_syntax_fold=1	"JavaScript
+" this might give me manual folding afterwards
+" augroup vimrc
+"   au BufReadPre * setlocal foldmethod=syntax
+"   au BufWinEnter * if &fdm == 'syntax' | setlocal foldmethod=manual | endif
+" augroup END
+
+
+"Settings for VimClojure
+let vimclojure#HighlightBuiltins = 1 
+let vimclojure#ParenRainbow = 1
+let vimclojure#FuzzyIndent = 1
+
+"Settings for NerdTreeTabs
+"let g:nerdtree_tabs_open_on_console_startup=1
+"map <Leader>q <plug>NERDTreeTabsToggle<CR>
+"autocmd VimEnter * NERDTreeTabsToggle *NOT WORKING*
+
+
+"settings for vim-multiple-cursor
+let g:multi_cursor_exit_from_insert_mode=0
+
+"fuzzyFinder options and bindings
+"noremap <Leader>b :FufBuffer <CR>
+"noremap <Leader>f :FufCoverageFile <CR>
+"noremap <Leader>d :FufDir <CR>
+" directories and extensions to ignore when listing files
+" these settings were found on StackOverflow..
+"let s:slash = '[/\\]'
+"let s:startname = '(^|'.s:slash.')'
+"let s:endname = '($|'.s:slash.')'
+"let s:extension = '\.bak|\.dll|\.exe|\.o|\.pyc|\.pyo|\.swp|\.swo'
+"let s:dirname = 'build|deploy|dist|vms|\.bzr|\.git|\.hg|\.svn|.+\.egg-info'
+"let g:fuf_file_exclude = '\v'.'('.s:startname.'('.s:dirname.')'.s:endname.')|(('.s:extension.')$)'
+"let g:fuf_dir_exclude = '\v'.s:startname.'('.s:dirname.')'.s:endname
+" limit number of displayed matches
+" (makes response instant even on huge source trees)
+"let g:fuf_enumeratingLimit = 60
+
+
+
+"-----------------------------------------------------------
+"settings for ctrlp (https://github.com/kien/ctrlp.vim)
+
+set runtimepath^=~/vimfiles/bundle/ctrlp.vim
+
+"sets the ctrl-shift-r to initiatate the ctrlp window...only works in gvim I think.
+:nnoremap <C-S-r> :CtrlP<cr>
+
+"-----------------------------------------------------------
+"dead
+
+
+
+"conqueTerm for terminal in vim
+"needs to know where python is installed if not default location
+"let g:ConqueTerm_PyExe = 'C:\Program Files (x86)\Python27\python.exe'
+
+"Snipmate plugin requires this flag
+:filetype plugin on
+if has('win32')
+	let g:snippets_dir= $HOME . "/vimfiles/bundle/snipmate/snippets/"
+endif
+

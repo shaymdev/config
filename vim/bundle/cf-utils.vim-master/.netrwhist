@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='D:/mastercontrol/sites/trunk/trunkEFP'
+let g:netrw_dirhist_2='D:/mastercontrol/sites/trunk'
+let g:netrw_dirhist_3='D:/mastercontrol/sites/trunk/services'
+let g:netrw_dirhist_4='D:/mastercontrol/sites/trunk/services/EnterpriseManagement'
+let g:netrw_dirhist_5='D:/mastercontrol/sites/trunk/services/EnterpriseManagement/locales'
