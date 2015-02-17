@@ -157,7 +157,7 @@ let g:multi_cursor_exit_from_insert_mode=0
 set runtimepath^=~/vimfiles/bundle/ctrlp.vim
 
 "sets the ctrl-shift-r to initiatate the ctrlp window...only works in gvim I think.
-:nnoremap <C-S-r> :CtrlP<cr>
+":nnoremap <C-S-r> :CtrlP<cr>
 
 "-----------------------------------------------------------
 "dead
