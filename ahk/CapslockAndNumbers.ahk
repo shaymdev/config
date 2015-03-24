@@ -29,3 +29,8 @@ Capslock & r::Send {Numpad9}
 Capslock & space::Send {Numpad0}
 
 
+
+Capslock & ,::Send {Up}
+Capslock & o::Send {Down}
+Capslock & a::Send {Left}
+Capslock & e::Send {Right}
