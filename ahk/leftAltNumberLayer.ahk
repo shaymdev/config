@@ -29,18 +29,18 @@ RShift & LShift:: send {Capslock}
 <!space::Send {Numpad0}
 
 ;; special characters and punctuation on left hand
-<!p::Send }
-<!.::Send {
+<!p::Send {}}
+<!.::Send {{}
 <!e::Send (
 <!u::Send )
 <!j::Send [
 <!k::Send ]
-<!'::Send !
+<!'::Send {!}
 <!,::Send @
-<!a::Send #
+<!a::Send {#}
 <!o::Send $
-<!;::Send %
-<!q::Send ^
+<!;::Send `%
+<!q::Send {^}
 
 ;; rightalt for arrow keys 
 >!.::Send {Up}
@@ -48,10 +48,12 @@ RShift & LShift:: send {Capslock}
 >!o::Send {Left}
 >!u::Send {Right}
 
-
 ;; consider rightalt for fxx keys on right hand
 
 
 ;; use rightalt as backspace
+;; conflicting with right alt layer
+/*
 RAlt::Backspace 
 	Return
+*/
