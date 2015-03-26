@@ -31,3 +31,8 @@ RShift & LShift:: send {Capslock}
 <!e::Send {Down}
 <!o::Send {Left}
 <!u::Send {Right}
+
+
+;; use rightalt as backspace
+RAlt::Backspace 
+	Return
