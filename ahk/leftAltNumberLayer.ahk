@@ -16,6 +16,7 @@ RShift & LShift:: send {Capslock}
 9::return
 0::return
 
+;; Numpad on right hand
 <!m::Send {Numpad1}
 <!w::Send {Numpad2}
 <!v::Send {Numpad3}
@@ -27,10 +28,28 @@ RShift & LShift:: send {Capslock}
 <!r::Send {Numpad9}
 <!space::Send {Numpad0}
 
-<!.::Send {Up}
-<!e::Send {Down}
-<!o::Send {Left}
-<!u::Send {Right}
+;; special characters and punctuation on left hand
+<!p::Send }
+<!.::Send {
+<!e::Send (
+<!u::Send )
+<!j::Send [
+<!k::Send ]
+<!'::Send !
+<!,::Send @
+<!a::Send #
+<!o::Send $
+<!;::Send %
+<!q::Send ^
+
+;; rightalt for arrow keys 
+>!.::Send {Up}
+>!e::Send {Down}
+>!o::Send {Left}
+>!u::Send {Right}
+
+
+;; consider rightalt for fxx keys on right hand
 
 
 ;; use rightalt as backspace
