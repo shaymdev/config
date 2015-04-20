@@ -28,6 +28,22 @@ RShift & LShift:: send {Capslock}
 <!r::Send {Numpad9}
 <!space::Send {Numpad0}
 
+;; disable special characters from below to force learning
+/*
+}::return
+{::return
+(::return
+)::return
+[::return
+]::return
+!::return
+@::return
+#::return
+$::return
+%::return
+^::return
+*/
+
 ;; special characters and punctuation on left hand
 <!p::Send {}}
 <!.::Send {{}
