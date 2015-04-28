@@ -30,6 +30,21 @@ RShift & LShift:: send {Capslock}
 <!o::Send $
 <!;::Send `%
 <!q::Send {^}
+<!y::Send &
+<!i::Send *
+
+;;other special characters that prep me for minimal layout
+
+/* still need keys assigned
+<!i::Send /
+<!i::Send ?
+<!i::Send =
+<!i::Send +
+<!i::Send \
+<!i::Send |
+<!i::Send -
+<!i::Send _
+*/
 
 ;; rightalt for arrow keys 
 >!.::Send {Up}
