@@ -67,9 +67,6 @@ RShift & LShift:: send {Capslock}
 >!z::Send {F12}
 
 
-;; use rightalt as backspace
-;; conflicting with right alt layer
-/*
-RAlt::Backspace 
-	Return
-*/
+;; add backspace to the rightalt layer
+>!Space::Send {Backspace}
+>!<^Space::Send ^{Backspace} 
