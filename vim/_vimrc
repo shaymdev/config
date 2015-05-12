@@ -83,7 +83,7 @@ noremap k gk
 :nnoremap <C-j> i<CR><ESC>
 
 "custom autoformat whole file for html/xml files
-:nnoremap <leader>= :%s/>\s</>\r</g<CR>gg=G
+:nnoremap <leader>= :%s/></>\r</g<CR>gg=G
 
 "this will remap <ctr>M to wrap selected in ColdFusion Comment the insert one
 "is broken...does it whenever enter is pressed
