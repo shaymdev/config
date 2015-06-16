@@ -70,3 +70,6 @@ RShift & LShift:: send {Capslock}
 ;; add backspace to the rightalt layer
 >!Space::Send {Backspace}
 >!<^Space::Send ^{Backspace} 
+
+;;shift backspace sends delete
++Backspace::Send  {Delete}

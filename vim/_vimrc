@@ -45,6 +45,8 @@ set tabstop=4
 
 set shiftwidth=4
 
+set tw=0
+
 set sidescroll=8
 set sidescrolloff=2
 
@@ -55,7 +57,7 @@ set sidescrolloff=2
 
 "sets the default font for gvim
 if has('gui_running')
-	set guifont=Lucida_Console:h11:cANSI
+	set guifont=Lucida_Console:h13:cANSI
 endif
 
 "this is for the autoclose stuff
