@@ -125,6 +125,12 @@ set dir=~/.backup/.swap
 " augroup END
 
 
+"settings for clojure files to do rainbow parens
+au BufEnter *.clj RainbowParenthesesActivate
+au Syntax clojure RainbowParenthesesLoadRound
+au Syntax clojure RainbowParenthesesLoadSquare
+au Syntax clojure RainbowParenthesesLoadBraces
+
 "Settings for VimClojure
 let vimclojure#HighlightBuiltins = 1 
 let vimclojure#ParenRainbow = 1
