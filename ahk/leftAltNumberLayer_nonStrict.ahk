@@ -52,6 +52,12 @@ RShift & LShift:: send {Capslock}
 >!o::Send {Left}
 >!u::Send {Right}
 
+;; rightalt for navigation keys keys 
+>!,::Send {Home}
+>!p::Send {End}
+>!+,::Send +{Home}
+>!+p::Send +{End}
+
 ;; rightalt for fxx keys on right hand
 >!m::Send {F1}
 >!w::Send {F2}
