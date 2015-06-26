@@ -57,6 +57,8 @@ RShift & LShift:: send {Capslock}
 >!p::Send {End}
 >!+,::Send +{Home}
 >!+p::Send +{End}
+>!y::Send {PgUp}
+>!i::Send {PgDn}
 
 ;; rightalt for fxx keys on right hand
 >!m::Send {F1}
