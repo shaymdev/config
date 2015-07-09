@@ -4,6 +4,10 @@ SetStoreCapslockMode, off
 LShift & RShift:: send {Capslock}
 RShift & LShift:: send {Capslock}
 
+;;capslock key acts as grave\tilde key
+Capslock::`
++Capslock::~
+
 ;; Numpad on right hand
 <!m::Send {Numpad1}
 <!w::Send {Numpad2}
