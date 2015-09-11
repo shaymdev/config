@@ -55,7 +55,7 @@ set sidescrolloff=2
 
 "sets the default font for gvim
 if has('gui_running')
-	set guifont=Lucida_Console:h11:cANSI
+	set guifont=Lucida_Console:h13:cANSI
 endif
 
 "this is for the autoclose stuff
@@ -75,6 +75,9 @@ let g:AutoClosePairs = {'(': ')', '{': '}', '[': ']', '"': '"', "'": "'",'#':'#'
 
 "this will remap the escape key, the jj or whatever must be typed quickly
 :imap jj <Esc>
+
+" Map Ctrl-Backspace to delete the previous word in insert mode.
+:imap <C-BS> <C-W>
 
 noremap j gj
 noremap k gk
