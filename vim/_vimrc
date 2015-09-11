@@ -45,8 +45,6 @@ set tabstop=4
 
 set shiftwidth=4
 
-set tw=0
-
 set sidescroll=8
 set sidescrolloff=2
 
@@ -57,7 +55,7 @@ set sidescrolloff=2
 
 "sets the default font for gvim
 if has('gui_running')
-	set guifont=Lucida_Console:h13:cANSI
+	set guifont=Lucida_Console:h11:cANSI
 endif
 
 "this is for the autoclose stuff
@@ -95,6 +93,27 @@ nnoremap <esc> :noh<return><esc>
 ":inoremap <C-M> <!---  ---><ESC>4hi
 :vnoremap <C-M> "mc<!---<CR>---><ESC>O<TAB><ESC>"m]pk"_dd
 
+"""""""""some tortoise commands """""""""
+"" modified from http://vim.wikia.com/wiki/Call_TortoiseSVN_commands_from_within_Vim
+"diff the current file
+map <silent> <leader>td :silent !"TortoiseProc.exe /command:diff /path:"%" /notempfile /closeonend"<CR>
+
+" current buffer and execute the Tortoise SVN interface's log
+map <silent> <leader>tl :silent !"TortoiseProc.exe /command:log /path:"%" /notempfile /closeonend"<CR>
+
+" current buffer and execute the Tortoise SVN interface's blame program
+map <silent> <leader>tb :call TortoiseBlame()<CR>
+
+function! TortoiseBlame()
+  " Now run Tortoise to get the blame dialog to display
+  let filename = expand("%")
+  let linenum = line(".")
+  silent execute('!TortoiseProc.exe /command:blame /path:"' . filename . '" /line:' . linenum . ' /notempfile /closeonend')
+endfunction
+"""""""""""""end tortoise stuff"""""""""""""
+
+
+
 "Turns off backup
 set nobackup
 
@@ -127,12 +146,6 @@ set dir=~/.backup/.swap
 "   au BufWinEnter * if &fdm == 'syntax' | setlocal foldmethod=manual | endif
 " augroup END
 
-
-"settings for clojure files to do rainbow parens
-au BufEnter *.clj RainbowParenthesesActivate
-au Syntax clojure RainbowParenthesesLoadRound
-au Syntax clojure RainbowParenthesesLoadSquare
-au Syntax clojure RainbowParenthesesLoadBraces
 
 "Settings for VimClojure
 let vimclojure#HighlightBuiltins = 1 

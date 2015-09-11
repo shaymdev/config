@@ -79,9 +79,23 @@ Capslock::`
 >!z::Send {F12}
 
 
+;;temporary combinations that need to be handled manually, espcially for the modifier combinations
+>!+l::Send +{F10}
+>!<!h::Send !{F4}
+>!<#.::Send #{Up}
+>!<#e::Send #{Down}
+>!<#o::Send #{Left}
+>!<#u::Send #{Right}
+
+
 ;; add backspace to the rightalt layer
 >!Space::Send {Backspace}
 >!<^Space::Send ^{Backspace} 
 
 ;;shift backspace sends delete
 +Backspace::Send  {Delete}
+
+
+;;other macros that I'm toying with for work. sending extra ctrl while shift is set...
+>!1::Send SYSADMIN
+>!2::Send smerrill
