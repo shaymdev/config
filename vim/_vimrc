@@ -47,6 +47,9 @@ set shiftwidth=4
 
 set sidescroll=8
 set sidescrolloff=2
+set wrap
+set bri
+set briopts=sbr,shift=8
 
 "sets an overflow highlight width at 100 characters
 "highlight OverLength ctermbg=red ctermfg=white guibg=#592929
