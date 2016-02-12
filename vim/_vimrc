@@ -13,6 +13,9 @@ if has('win32')
 
 	"Windows Custom command to insert date
 	command Date execute ":r !date /t"
+
+	"reset the vimrc variable since I'm using a linked source vimrc to use my shared one
+	let $MYVIMRC="d:/config/vim/_vimrc"
 else
 	"linux Custom command to insert date
 	command Date execute ":r !date +'%a %D'"
@@ -49,7 +52,9 @@ set sidescroll=8
 set sidescrolloff=2
 set wrap
 set bri
-set briopts=sbr,shift=8
+set briopt=sbr,shift:8
+set formatoptions+=1
+set lbr
 
 "sets an overflow highlight width at 100 characters
 "highlight OverLength ctermbg=red ctermfg=white guibg=#592929
