@@ -134,6 +134,8 @@ set nobackup
 
 set dir=~/.backup/.swap
 
+set undodir=~/.backup/.undo
+
 "trying to get some autofold action
 " I put these files in my cfml.vim in one of my bundle's syntax
 " folders...probably could be put somewhere else
