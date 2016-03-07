@@ -14,8 +14,6 @@ if has('win32')
 	"Windows Custom command to insert date
 	command Date execute ":r !date /t"
 
-	"reset the vimrc variable since I'm using a linked source vimrc to use my shared one
-	let $MYVIMRC="d:/config/vim/_vimrc"
 else
 	"linux Custom command to insert date
 	command Date execute ":r !date +'%a %D'"
@@ -24,13 +22,14 @@ endif
 command Spellon execute ":set spell spelllang=en_us"
 command Spelloff execute ":set nospell"
 
+"reset the vimrc variable since I'm using a linked source vimrc to use my shared one
+let $MYVIMRC="c:/mc/config/vim/_vimrc"
+
 "pathogen makes it easy to install plugins and runtime files
 "in their own directories. Any plugins can be extracted to a
 "subdirectory under vimfiles/bundle
 call pathogen#infect()
 
-"set color-scheme
-colorscheme two2tango
 
 :let mapleader=","
 
@@ -64,6 +63,9 @@ set lbr
 "sets the default font for gvim
 if has('gui_running')
 	set guifont=Lucida_Console:h13:cANSI
+	
+	"set color-scheme
+	colorscheme two2tango
 endif
 
 "this is for the autoclose stuff
