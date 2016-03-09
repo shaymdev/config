@@ -37,17 +37,13 @@ colorscheme two2tango
 "set numbers
 set nu
 
-set nowrap
-
 "set ignore case for searches (like using /)
 set ic
 
 set autoindent
-
 set tabstop=4
-
 set shiftwidth=4
-
+set tw=0
 set sidescroll=8
 set sidescrolloff=2
 set wrap
@@ -213,6 +209,6 @@ set runtimepath^=~/vimfiles/bundle/ctrlp.vim
 "Snipmate plugin requires this flag
 :filetype plugin on
 if has('win32')
-	let g:snippets_dir= $HOME . "/vimfiles/bundle/snipmate/snippets/"
+	let g:snippets_dir= "~/vimfiles/bundle/snipmate/snippets/"
 endif
 
