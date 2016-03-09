@@ -3,5 +3,7 @@ snippet dump
 	<cfdump var="#${1}#" label="${2:$1}" />
 snippet dumpa
 	<cfdump var="#${1}#" label="${2:$1}" /><cfabort>
+snippet filedump
+	<cfsavecontent variable="local.dumper" ><cfdump var="#${1}#" label="${2:$1}" /><cfsavecontent><cffile action="append" output="#local.dumper#" file="c:/${3}.html"/>
 snippet //
 	<!--- ${1} --->
