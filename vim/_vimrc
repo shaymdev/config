@@ -39,6 +39,7 @@ set nu
 "set ignore case for searches (like using /)
 set ic
 
+set autoread
 set autoindent
 set tabstop=4
 set shiftwidth=4
@@ -196,8 +197,8 @@ let g:multi_cursor_exit_from_insert_mode=0
 
 set runtimepath^=~/vimfiles/bundle/ctrlp.vim
 
-"sets the ctrl-shift-r to initiatate the ctrlp window...only works in gvim I think.
-":nnoremap <C-S-r> :CtrlP<cr>
+"sets the ctrl-shift-n to initiatate the ctrlp window...only works in gvim I think.
+nnoremap <C-S-n> :CtrlP<cr>
 
 "-----------------------------------------------------------
 "dead
