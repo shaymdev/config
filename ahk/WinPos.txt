@@ -1,0 +1,11 @@
+SECTION: Monitors=3,MonitorPrimary=1; Desktop size:-617,-617,2181,1659
+Title="ahk",x=-1092,y=-486,width=979,height=462,maximized=0,path=""
+Title="Google Chrome",x=977,y=-1040,width=960,height=1040,maximized=0,path=""
+Title="plat",x=-1080,y=-1012,width=979,height=518,maximized=0,path=""
+Title="MasterControl Slack",x=846,y=54,width=565,height=785,maximized=0,path=""
+Title="IntelliJ IDEA 2016",x=10,y=-1040,width=974,height=1047,maximized=0,path=""
+Title="secondDeliveryDifference",x=-1083,y=-1,width=979,height=439,maximized=0,path=""
+Title="Pianobar",x=-6,y=941,width=1214,height=108,maximized=0,path=""
+Title="Command Prompt",x=-1071,y=437,width=1004,height=405,maximized=0,path=""
+Title="Outlook",x=1203,y=842,width=360,height=200,maximized=0,path=""
+

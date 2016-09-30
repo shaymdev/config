@@ -51,6 +51,9 @@ set bri
 set briopt=sbr,shift:8
 set formatoptions+=1
 set lbr
+set go-=m
+set go-=T
+set go-=r
 
 "sets an overflow highlight width at 100 characters
 "highlight OverLength ctermbg=red ctermfg=white guibg=#592929
