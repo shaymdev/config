@@ -55,6 +55,10 @@ set go-=m
 set go-=T
 set go-=r
 
+"autosave all when focus lost...if ignoring untitled buffers is desired add
+"silent! after the asterisk. They will not be saved.
+:au FocusLost * :wa
+
 "sets an overflow highlight width at 100 characters
 "highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 "highlight OverLength ctermbg=black guibg=#592929
@@ -160,6 +164,12 @@ set undodir=~/.backup/.undo
 "   au BufReadPre * setlocal foldmethod=syntax
 "   au BufWinEnter * if &fdm == 'syntax' | setlocal foldmethod=manual | endif
 " augroup END
+
+"rainbow parens by kien
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+au Syntax * RainbowParenthesesLoadBraces
 
 
 "Settings for VimClojure
