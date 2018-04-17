@@ -102,6 +102,9 @@ nnoremap <esc> :noh<return><esc>
 "custom key to insert line break from normal mode, kind of opposite of <S-J>
 :nnoremap <C-j> i<CR><ESC>
 
+"count the occurrences of the word under the cursor
+:map <leader>* *<C-O>:%s///gn<CR>
+
 "custom autoformat whole file for html/xml files
 :nnoremap <leader>= :%s/></>\r</g<CR>gg=G
 
