@@ -1,0 +1,328 @@
+body, #bugzilla-body, #titles, #header, #header .links, #footer, #attachment_table, #attachment_table tr, #a0 > TH, .cc_list_display, .ih_inlinehistory, .bz_comment_user a:hover, .links .dropdown, .ih_history_change
+{ background: transparent !important; }
+
+*
+{ color: grey !important;
+border-color: #444 !important; }
+
+/* notifications bar */
+DIV[style*="background-color:#fff9db;"]
+{ background: radial-gradient(at top, rgba(206, 210, 193, .4), rgba(204, 155, 90, .3)) no-repeat !important;
+border: 1px solid !important;
+border-color: transparent #888 #888 #000 !important;
+border-radius: 3px 3px 0 0 !important; }
+
+/* === header */
+
+/* your bugs count */
+#titles #badge
+{ background: radial-gradient(#8D887C, transparent) no-repeat !important;
+padding: 2px 6px !important;
+border: 1px solid !important;
+border-color: #000 #888 #888 #000 !important;
+border-radius: 3px !important;
+box-shadow: 0px 1px 4px 1px rgba(0,0,0, .3) inset !important;
+margin: 0 !important;
+font-size: 16px !important;
+text-shadow: 1px 1px 1px #C5BEAD !important; }
+
+/* sign in buttons */
+
+#header .separator
+{ display: none !important; }
+
+#mini_login_top > IMG, 
+#mini_login_bottom > IMG, 
+#moz_tab, #title a
+{ opacity: .65 !important; }
+
+#mini_login_top > IMG:hover, 
+#mini_login_bottom > IMG:hover, 
+#moz_tab:hover, #title a:hover
+{ opacity: 1 !important; }
+
+#moz_login .dropdown,
+.bz_section_additional_comments,
+#header .links, 
+#footer
+{ border: none !important; }
+
+#persona_mini_login_top > IMG,
+#github_mini_login_top > FORM > INPUT:last-child
+{ filter: invert(80%) drop-shadow(1px 1px 2px #333) brightness(90%) !important;
+border: none !important;
+box-shadow: none !important;
+margin-top: -4px !important; }
+
+#persona_mini_login_top > IMG:hover,
+#github_mini_login_top > FORM > INPUT:last-child:hover
+{ filter: invert(80%) drop-shadow(1px 1px 2px #333) brightness(100%) !important; }
+
+#mini_login_top
+{ margin-left: 4px !important; }
+
+#mini_login_top input,
+#moz_new_account_container_top
+{ margin-right: 4px !important; }
+
+.bz_login,
+.bz_password
+{ width: auto !important;
+padding-left: 3px !important; }
+
+#log_in_top
+{ padding: 3px !important; }
+
+#title a:hover
+{ text-decoration: none !important; }
+
+hr
+{ background: radial-gradient(at top, #181612, transparent) fixed !important;
+border: none !important; }
+
+/* === dropdown menus */
+
+.yuimenu .bd, 
+.dropdown ul
+{ background: rgba(93,90,83,.8) !important;
+border: 1px solid rgba(0,0,0, .5) !important; 
+box-shadow: 4px 4px 8px rgba(0,0,0, .5) !important; }
+
+.yuimenu .bd .yuimenuitem:hover
+{ background: rgba(140,140,140,.2) !important; }
+
+.yuimenuitemlabel:hover, 
+.links .dropdown ul a:hover
+{ text-shadow: 1px 0px 0px #000 !important; }
+
+#moz_login .dropdown ul, 
+.bz_comment_tags,
+.bz_comment_tag
+{ background: #5D5A53 !important; }
+
+#moz_login a
+{ color: #B1B2AB !important;
+text-shadow: 1px 2px 1px #000 !important;
+font-size: 14px !important; }
+
+#moz_login a:hover
+{ color: #E8E9E0 !important;
+text-decoration: none !important; }
+
+/* === front page*/
+
+#page-index
+{ margin: 0 auto !important; }
+
+#welcome
+{ /* font-weight: normal !important; */
+font-size: large !important;
+margin-top: 20px !important;
+margin-bottom: -20px !important; }
+
+.bz_common_actions
+{ margin-top: 10px !important;
+filter: brightness(90%) !important;
+-moz-transform: scale(.7, .7) !important; }
+
+.bz_common_actions:hover 
+{ filter: brightness(120%) !important; }
+
+.bz_common_actions span
+{ font-weight: normal !important;
+font-family: "Segoe UI", sans-serif !important;
+font-size: 22px !important;
+text-shadow: 1px 1px 1px #aaa !important;
+filter: brightness(70%) !important; }
+
+.bz_common_actions:hover span
+{ text-shadow: 1px 0px 0px, 1px 1px 1px #bbb !important; }
+
+.form.quicksearch_form form
+{ margin-right: 16px !important; }
+
+/* ============== */
+
+#bugzilla-body
+{ border: 1px inset black !important;
+box-shadow: inset 0px 2px 10px rgba(0,0,0, .5) !important; }
+
+/* === textboxes */
+
+.txt, 
+.bz_login, 
+.bz_password, 
+.btn
+{ -moz-appearance: none !important;
+height: 26px !important; }
+
+INPUT:not([type="checkbox"]):not([type="radio"]):not([type="image"]), 
+select, 
+#comment
+{ -moz-appearance: none !important; 
+color: grey !important;
+font-family: "Segoe UI", sans serif !important;
+-moz-appearance: none !important; 
+border-radius: 3px !important;
+border: 1px solid rgba(200,200,200, .4) !important;
+box-shadow: 0px 4px 6px 1px rgba(255,255,255,.2) inset, 1px 2px 8px rgba(0,0,0,.5) !important; 
+background: transparent !important; }
+
+INPUT:not([type="checkbox"]):not([type="radio"])
+{ font-weight: bold !important; }
+
+select, 
+option:checked
+{ -moz-appearance: none !important; 
+background: transparent !important;
+border: 1px black inset !important; 
+border-radius: 5px !important;
+padding: 0 !important; }
+
+INPUT:not([type="image"]):hover, 
+INPUT:focus,
+input[type="button"]:not([type="checkbox"]):hover, 
+input[type="button"]:not([type="checkbox"]):focus, 
+button:not([type="checkbox"]):active, 
+INPUT[type="text"]:hover,
+input[type="submit"]:hover, 
+INPUT[type="text"]:active, 
+.txt:hover, .txt:focus, .txt:active, 
+option:hover, 
+#comment:hover, #comment:active, #comment:focus
+{ background: radial-gradient(at top, rgba(90, 90, 93, .7), transparent) no-repeat !important;
+text-shadow: 1px 0px 0px #000 !important; }
+
+/* checkboxes */
+
+INPUT[type="checkbox"]
+{ -moz-appearance: none !important;
+color: #E75800 !important;
+background: none !important;
+border-radius: 0px !important; 
+border: 1px inset black !important;
+box-shadow: inset 1px 2px 2px rgba(0,0,0, .4) !important; }
+
+/* === bug title and info box*/
+
+#header .links
+{ padding-top: 0 !important;
+padding-bottom: 5px !important;
+margin-top: -12px !important; }
+
+.bz_alias_short_desc_container.edit_form
+{ margin: 0 auto !important;
+padding: 2px 6px !important;
+background: rgba(150,145,135,.3) !important;
+border: 1px inset black !important;
+border-radius: 0 !important; 
+box-shadow: inset 0px 1px 4px 2px rgba(0,0,0, .3) !important;
+font-size: 16px !important;
+font-weight: bold !important;
+font-family: Segoe UI, sans-serif !important; }
+
+table.edit_form, #bz_big_form_parts
+{ padding-bottom: 16px !important;
+line-height: 12px !important; }
+
+#attachment_table
+{ margin-bottom: 6px !important; }
+
+.mozreview-table,
+.mozreview-table thead,
+.mozreview-table tbody,
+.mozreview-requests
+{ background: rgba(129, 135, 141, .2) !important; }
+
+#static_bug_status
+{ text-shadow: 1px 0px 0px !important; }
+
+/* ===posts */
+
+/*.bz_comment_table, 
+.bz_comment, 
+#bz_big_form_parts
+{ margin: 0 auto !important; }
+*/
+
+.bz_comment_user a img
+{ padding: 1px !important;
+border: 1px solid !important;
+border-color: #000 #888 #888 #000 !important;
+box-shadow: 0px 1px 4px 1px rgba(0,0,0, .3) inset !important; } 
+
+.bz_comment, 
+pre, 
+.edit_form, 
+.comment_tab
+{ background: #252525 !important;
+border: 1px solid #333 !important;
+box-shadow: inset 0px 1px 4px 2px rgba(0,0,0, .2) !important;
+margin-bottom: 2px !important; }
+
+.bz_comment:hover, 
+.sorttable_body tr:hover, 
+.bz_buglist_header th, 
+.active_comment_tab, 
+.comment_tab:hover
+{ box-shadow: 0px 4px 6px 1px rgba(255,255,255,.2) inset, 1px 2px 8px rgba(0,0,0,.5) !important; 
+background: rgba(126,128,118, .5) !important; }
+
+.quote
+{ background: rgba(153,144,126, .3) !important;
+border: 1px inset black !important; }
+
+/* bugs tables */
+.bz_row_odd
+{ background: rgba(50,50,50,.2) !important; }
+
+.bz_row_even 
+{ background: rgba(30,30,30,.2) !important; }
+
+#attachment_table
+{ width: auto !important; }
+
+.related_actions
+{ margin-top: 14px !important; }
+
+#show_dependency_tree_or_graph
+{ margin-bottom: 12px !important; }
+
+/* === details */
+
+.calendar_button, #con_calendar_from
+{filter: invert(80%) !important; }
+
+#report-header
+{ background: rgba(114, 126, 122, .3) !important; }
+
+#report-header th, #report-header th a
+{ font-weight: normal !important; }
+
+#report
+{ background: #7E7B6E !important;
+border: 1px solid !important;
+border-color: #000 #888 #888 #000 !important;
+box-shadow: 0px 1px 4px 1px rgba(0,0,0, .3) inset !important; }
+
+.report_row_even
+{ background: rgba(108, 116, 103, .5) !important; }
+
+/* ===== images */
+.arrow_down
+{ border: none !important;
+width: 0 !important;
+padding-left: 18px !important;
+height: 0 !important;
+padding-top: 20px !important;
+background: url(data:application/file;base64,AAABAAEACwgAAAEAGABoAQAAFgAAACgAAAALAAAAEAAAAAEAGAAAAAAAQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArKysAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArKysrKysrKysAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArKysrKysrKysAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAArKysrKysrKysrKysrKysAAAAAAAAAAAAAAAAAAAAAAAArKysrKysrKysrKysrKysrKysrKysAAAAAAAAAAAAAAAArKysrKysrKysrKysrKysrKysrKysrKysrKysAAAAAAAAAAAArKysrKysrKysrKysrKysrKysrKysrKysrKysAAAAAAAArKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysAAAD74AAA8eAAAPHgAADg4AAAwGAAAIAgAACAIAAAAAAAAA==) center no-repeat !important; }
+
+/* upper right corner Mozilla link */ 
+[src="skins/contrib/Mozilla/tabzilla.png"]
+{ margin-top: 6px !important;
+width: 0 !important;
+padding-left: 125px !important;
+background: #004400 !important; }
+
+html
+{ background: #333333 !important; }

@@ -1,0 +1,19 @@
+/* AGENT_SHEET */
+
+@namespace url(http://www.w3.org/1999/xhtml);
+.qabox_header {
+    background-color: #5D5A53 !important;
+}
+.qabox {
+    background-color: #5D5A53 !important;
+}
+
+.bz_time_tracking_table th {
+	background-color: rgba(12,12,12,0) !important;    
+}
+.bz_comment_table {
+	width: 100%;
+}
+.bz_comment_text {
+    width: inherit;
+}

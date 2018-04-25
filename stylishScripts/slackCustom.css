@@ -1,0 +1,20 @@
+/*
+ * urls matching regex: .*slack.com.*
+ */
+.client_channels_list_container {
+    flex-basis: 60px !important;
+    transition: flex-basis 0.2s !important;
+    -webkit-transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1) !important;
+    transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1) !important;
+}
+.client_channels_list_container:hover {
+    flex-basis: 220px !important;
+}
+
+.channels_list_holder {
+    width:60px !important;
+}
+
+.channels_list_holder:hover {
+    width:220px !important;
+}
