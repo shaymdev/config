@@ -144,10 +144,7 @@ set nobackup
 "set backupdir=d:\Users\smerrill\.backup USE RELATIVE PATHS!
 
 "Sets the directory to store swap files to ~/.backup
-"set dir=~/.backup
-
 set dir=~/.backup/.swap
-
 set undodir=~/.backup/.undo
 
 "trying to get some autofold action
