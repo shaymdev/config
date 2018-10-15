@@ -165,12 +165,6 @@ set undodir=~/.backup/.undo
 "   au BufWinEnter * if &fdm == 'syntax' | setlocal foldmethod=manual | endif
 " augroup END
 
-"rainbow parens by kien
-au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
-au Syntax * RainbowParenthesesLoadBraces
-
 
 "Settings for VimClojure
 let vimclojure#HighlightBuiltins = 1 
