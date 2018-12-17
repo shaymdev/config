@@ -209,7 +209,9 @@ nnoremap <C-S-n> :CtrlP<cr>
 
 "-----------------------------------------------------------
 "dead
+"
 
+let g:rainbow_active = 1 "0 if you want to enable it later via :RainbowToggle
 
 
 "conqueTerm for terminal in vim
