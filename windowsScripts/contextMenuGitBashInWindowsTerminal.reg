@@ -1,0 +1,21 @@
+Windows Registry Editor Version 5.00
+
+;Requires the profile in windows terminal to be named "Git Bash" otherwise you'll need to update the two command keys below
+;I got most of this info from https://stackoverflow.com/questions/56839307/adding-git-bash-to-the-new-windows-terminal
+
+;add context menu item when right clicking background of file explorer
+[HKEY_CLASSES_ROOT\Directory\Background\shell\git_shell_wt]
+@="Git Bash in Windows terminal here"
+"Icon"="%PROGRAMFILES%\\git\\mingw64\\share\\git\\git-for-windows.ico"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\git_shell_wt\command]
+@="\"C:\\Users\\smerrill\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe\"  \"-p\" \"Git Bash\" \"-d\" \"%v.\""
+
+
+;add context menu item when right clicking item in file explorer
+[HKEY_CLASSES_ROOT\Directory\shell\git_shell_wt]
+@="Git Bash in Windows terminal here"
+"Icon"="%PROGRAMFILES%\\git\\mingw64\\share\\git\\git-for-windows.ico"
+
+[HKEY_CLASSES_ROOT\Directory\shell\git_shell_wt\command]
+@="\"C:\\Users\\smerrill\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe\"  \"-p\" \"Git Bash\" \"-d\" \"%1\""
