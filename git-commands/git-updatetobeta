@@ -1,0 +1,14 @@
+#!/bin/sh
+
+git remote update
+
+beta_tag_matcher="*-beta.*"
+most_recent_beta_tag=$(git describe --match $beta_tag_matcher origin/master --abbrev=0)
+echo "Most recent beta tag found: " $most_recent_beta_tag
+
+git checkout $most_recent_beta_tag
+git lg -n 1
+
+
+
+
