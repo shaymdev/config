@@ -19,8 +19,7 @@ else
 	command Date execute ":r !date +'%a %D'"
 endif
 
-command Spellon execute ":set spell spelllang=en_us"
-command Spelloff execute ":set nospell"
+set spelllang=en_us " :set spell or :set nospell and use ]s or [s to jump to next. z= to see sugestions and zg to add to dictionary (zw to mark incorrect)
 
 "reset the vimrc variable since I'm using a linked source vimrc to use my shared one
 let $MYVIMRC="c:/mc/config/vim/_vimrc"
@@ -98,6 +97,9 @@ noremap k gk
 
 "cancel highlighting of last search with esc
 nnoremap <esc> :noh<return><esc>
+
+"search for visibly selected text: To use the mapping, visually select the characters that are wanted in the search, then type // to search for the next occurrence of the selected text. Then press n to search for the next occurrence.
+vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
 
 "custom key to insert line break from normal mode, kind of opposite of <S-J>
 :nnoremap <C-j> i<CR><ESC>
